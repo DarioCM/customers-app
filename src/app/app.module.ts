@@ -4,8 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {AppComponent} from "./app.component";
 import { AppRoutingModule } from './app-routing.module';
+import {HeaderComponent} from "./header/header.component";
+import {FooterComponent} from "./footer/footer.component";
+import {DirectiveComponent} from "./directive/directive.component";
+import {CustomersComponent} from "./customers/customers.component";
 
-
+// for the backend connection
+import { HttpClientModule } from "@angular/common/http";
 
 
 @NgModule({
@@ -15,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   bootstrap: [ AppComponent ]
 })
